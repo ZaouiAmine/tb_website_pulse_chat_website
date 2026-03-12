@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse Chat</title>
+    <link rel="stylesheet" href="./assets/theme.css" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="./assets/shell.js"></script>
+    <script>
+      mountShell({
+        title: "Pulse Chat",
+        subtitle: "Support command panel",
+        cards: [
+          { label: "Live Threads", value: "19", note: "3 high priority" },
+          { label: "Avg First Reply", value: "01:42", note: "Target < 02:00" },
+          { label: "Agents Online", value: "11", note: "2 away" },
+          { label: "Sentiment", value: "+0.36", note: "Stable" }
+        ],
+        listTitle: "Queue Watch",
+        items: [
+          "Order refund queue is rising in EU region",
+          "Billing bot handoff success at 94 percent",
+          "One enterprise account waiting 12 minutes",
+          "Escalation backlog cleared for mobile app"
+        ]
+      });
+    </script>
+  </body>
+</html>
